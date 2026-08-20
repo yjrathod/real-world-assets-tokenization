@@ -110,9 +110,4 @@ contract RWATokenization {
         emit TokensPurchased(_assetId, msg.sender, _tokenAmount, msg.value);
     }
 
-    function withdraw() public {
-        require(msg.sender == owner, "Only admin can withdraw");
-
-        payable(owner).transfer(address(this).balance);
-    }
 }
