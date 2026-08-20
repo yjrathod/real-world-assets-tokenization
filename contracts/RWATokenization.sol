@@ -109,5 +109,4 @@ contract RWATokenization {
 
         emit TokensPurchased(_assetId, msg.sender, _tokenAmount, msg.value);
     }
-
 }
